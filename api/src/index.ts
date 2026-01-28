@@ -1,13 +1,9 @@
- import express  from "express"
+import express from "express"
+import router from "./routes/products/index.ts"
+const app = express()
 
- const app=express()
+app.use('', router)
 
-app.get("/",(req,res)=>{
-    res.send("Hello World")
-})
-
-
-
- app.listen(3000,()=>{
+app.listen(3000, () => {
     console.log("Server is running on port 3000")
- })
+})
