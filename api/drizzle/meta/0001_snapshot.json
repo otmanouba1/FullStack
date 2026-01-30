@@ -1,6 +1,6 @@
 {
-  "id": "810c10ab-8257-4d01-936a-f87c831f5228",
-  "prevId": "14f16c22-2973-4750-b01c-b315c2c05d06",
+  "id": "3a87af3f-48ee-486b-9ccc-dc0ba0de4704",
+  "prevId": "e2380268-072b-43f7-a001-5155d4063bf5",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -45,6 +45,37 @@
           ]
         }
       },
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.product_categories": {
+      "name": "product_categories",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "product_id": {
+          "name": "product_id",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "category_id": {
+          "name": "category_id",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
       "policies": {},
       "checkConstraints": {},
       "isRLSEnabled": false

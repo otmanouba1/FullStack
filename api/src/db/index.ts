@@ -17,6 +17,7 @@ export const {
   product_images,
   product_variants,
   product_ratings,
+  product_categories,
   users,
   user_addresses,
 } = { ...userSchema, ...productSchema };
